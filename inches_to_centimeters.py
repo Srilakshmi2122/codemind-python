@@ -1,0 +1,1 @@
+print(f"{2.54*int(input()):.2f}")
