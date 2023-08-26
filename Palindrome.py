@@ -6,6 +6,6 @@ while q!=0:
     q=q//10
     s=s*10+r
 if n==s:
-    print("Palindrome")
+    print("True")
 else:
-    print("Not Palindrome")
+    print("False")
