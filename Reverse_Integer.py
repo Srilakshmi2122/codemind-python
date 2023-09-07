@@ -1,13 +1,13 @@
-# We have to take the number being -ve into consideration
-n = int(input())
-# Storing -n if value is negative
-# or storing n in a temp variable
-temp = -n if n < 0 else n
-# Reversing the temp
-reverse = 0
-while temp:
- reverse = reverse * 10 + temp % 10
- temp = temp // 10
-# Checking whether to print -reverse or +reverse
-# using n value again
-print(-reverse if n < 0 else reverse)
+def rev(a):
+    s=0
+    t=-a if a<0 else a
+    while t:
+        r=t%10
+        s=s*10+r
+        t=t//10
+    if a>0:
+        return s
+    else:
+        return -s
+n=int(input())
+print(rev(n))
